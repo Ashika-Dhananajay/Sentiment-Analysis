@@ -1,0 +1,27 @@
+<html>
+        <link rel="stylesheet" href="/static/style.css" type="text/css">
+<head>
+    <meta charset="UTF-8">
+     <title>Upload File for Sentiment Analysis</title>
+</head>
+<body>
+    <div class="login">
+            <div class="login-screen">
+                    <div class="app-title"> 
+                        <h1>File Upload</h1>
+                     </div>
+        <div class="login-form">
+                
+        <form id="upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">    
+        <div class="control-group">
+            <input type="file" name="file" accept=".csv, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required>
+        </div>
+        
+            <input type="submit" name="send" value="Upload File" class="btn btn-primary btn-large btn-block">
+        
+        </form>
+</div>
+</div>
+</div>
+</body>
+</html>
